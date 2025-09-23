@@ -1,13 +1,16 @@
-// server.c - Servidor Metro Autónomo Telemetría (Windows)
-// Compilar: gcc server.c -o server.exe -lws2_32
+// server.c - Servidor Metro Autónomo Telemetría (Linux/POSIX)
+// Compilar: gcc server.c -o server -lpthread
 
-#include <winsock2.h>
-#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <ctype.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 
 #define MAX_CLIENTS 10
 #define BUFFER_SIZE 1024
@@ -19,7 +22,7 @@
 #define VEL_MIN 1
 
 typedef struct {
-    SOCKET sock;
+    int sock;
     struct sockaddr_in addr;
     int isAdmin;
     char username[50];
@@ -27,7 +30,7 @@ typedef struct {
 
 Client *clients[MAX_CLIENTS];
 int num_clients = 0;
-CRITICAL_SECTION clients_lock;
+pthread_mutex_t clients_lock;
 
 FILE *logFile;
 int estacion = 1;
@@ -36,7 +39,6 @@ int velocidad = 1;
 int bateria = 100;
 int detenido = 0;
 int estaciones_recorridas = 0;
-int parada_ticks = 0;
 char last_command[64] = "";
 
 // ---------- Estado admin ----------
@@ -45,12 +47,12 @@ Client *admin_client = NULL;
 
 // ---------- Logging ----------
 void log_event_client(Client *c, const char *msg) {
-    SYSTEMTIME t;
-    GetLocalTime(&t);
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
     char buffer[512];
-    _snprintf(buffer, sizeof(buffer), "[%02d:%02d:%02d] %s:%d -> %s\n",
-              t.wHour, t.wMinute, t.wSecond,
-              inet_ntoa(c->addr.sin_addr), ntohs(c->addr.sin_port), msg);
+    snprintf(buffer, sizeof(buffer), "[%02d:%02d:%02d] %s:%d -> %s\n",
+             t->tm_hour, t->tm_min, t->tm_sec,
+             inet_ntoa(c->addr.sin_addr), ntohs(c->addr.sin_port), msg);
     printf("%s", buffer);
     if (logFile) {
         fprintf(logFile, "%s", buffer);
@@ -59,11 +61,11 @@ void log_event_client(Client *c, const char *msg) {
 }
 
 void log_event(const char *msg) {
-    SYSTEMTIME t;
-    GetLocalTime(&t);
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
     char buffer[512];
-    _snprintf(buffer, sizeof(buffer), "[%02d:%02d:%02d] %s\n",
-              t.wHour, t.wMinute, t.wSecond, msg);
+    snprintf(buffer, sizeof(buffer), "[%02d:%02d:%02d] %s\n",
+             t->tm_hour, t->tm_min, t->tm_sec, msg);
     printf("%s", buffer);
     if (logFile) {
         fprintf(logFile, "%s", buffer);
@@ -84,17 +86,17 @@ int check_admin_password(const char *pass) {
 
 // ---------- Enviar mensaje ----------
 int send_to_client(Client *c, const char *msg) {
-    if (c && c->sock != INVALID_SOCKET) {
-        int sent = send(c->sock, msg, (int)strlen(msg), 0);
-        if (sent == SOCKET_ERROR) return 0;
+    if (c && c->sock >= 0) {
+        int sent = send(c->sock, msg, strlen(msg), 0);
+        if (sent < 0) return 0;
     }
     return 1;
 }
 
 // ---------- Eliminar cliente ----------
 void remove_client(Client *c) {
-    closesocket(c->sock);
-    EnterCriticalSection(&clients_lock);
+    close(c->sock);
+    pthread_mutex_lock(&clients_lock);
     for (int i = 0; i < num_clients; i++) {
         if (clients[i] == c) {
             clients[i] = clients[num_clients - 1];
@@ -107,7 +109,7 @@ void remove_client(Client *c) {
         admin_client = NULL;
         log_event("Administrador desconectado.");
     }
-    LeaveCriticalSection(&clients_lock);
+    pthread_mutex_unlock(&clients_lock);
     free(c);
 }
 
@@ -116,11 +118,9 @@ void send_telemetry(Client *c) {
     char msg[512];
     char eventos[256] = "";
 
-    // Eventos importantes comunes
     if(bateria == 0) strcat(eventos, "DETENIDO_BATERIA;");
     if(estaciones_recorridas == 0) strcat(eventos, "CAMBIO_SENTIDO;");
 
-    // Eventos adicionales para Admin
     if(c->isAdmin){
         if(detenido && bateria>0) strcat(eventos, "DETENIDO_MANUAL;");
         if(estacion == NUM_ESTACIONES || estacion == 1) strcat(eventos, "PARADA_ESTACION;");
@@ -130,15 +130,14 @@ void send_telemetry(Client *c) {
         }
     }
 
-    // Telemetría diferenciada
     if(c->isAdmin){
-        _snprintf(msg, sizeof(msg),
+        snprintf(msg, sizeof(msg),
               "TELEMETRIA Estacion:%d Direccion:%s Vel:%d Bateria:%d Estado:%s Rol:ADMIN Eventos:%s\n",
               estacion, direccion == 1 ? "IDA" : "VUELTA", velocidad, bateria,
               detenido ? "DETENIDO" : "MOVIMIENTO",
               eventos);
     } else {
-        _snprintf(msg, sizeof(msg),
+        snprintf(msg, sizeof(msg),
               "TELEMETRIA Estacion:%d Direccion:%s Vel:%d Bateria:%d Estado:%s Rol:OBSERVER\n",
               estacion, direccion == 1 ? "IDA" : "VUELTA", velocidad, bateria,
               detenido ? "DETENIDO" : "MOVIMIENTO");
@@ -181,7 +180,7 @@ void handle_command(Client *c, const char *cmd) {
 }
 
 // ---------- Hilo cliente ----------
-DWORD WINAPI client_thread(LPVOID arg) {
+void *client_thread(void *arg) {
     Client *c = (Client *)arg;
     char buffer[BUFFER_SIZE];
     int bytes;
@@ -193,7 +192,7 @@ DWORD WINAPI client_thread(LPVOID arg) {
     send_to_client(c, "Bienvenido al Metro.\nIngrese 'admin <password>' o 'observer'.\n");
 
     bytes = recv(c->sock, buffer, BUFFER_SIZE - 1, 0);
-    if (bytes <= 0) { remove_client(c); return 0; }
+    if (bytes <= 0) { remove_client(c); return NULL; }
     buffer[bytes] = '\0';
 
     if (strncmp(buffer, "admin", 5) == 0) {
@@ -204,12 +203,12 @@ DWORD WINAPI client_thread(LPVOID arg) {
             c->isAdmin = 1; admin_active = 1; admin_client = c;
             send_to_client(c, "Login Admin OK.\n");
             log_event_client(c, "Administrador autenticado.");
-        } else { send_to_client(c, "Clave incorrecta.\n"); remove_client(c); return 0; }
+        } else { send_to_client(c, "Clave incorrecta.\n"); remove_client(c); return NULL; }
     } else if (strncmp(buffer, "observer", 8) == 0) {
         c->isAdmin = 0;
         send_to_client(c, "Modo observador.\n");
         log_event_client(c, "Observador autenticado.");
-    } else { send_to_client(c, "ERROR: Rol invalido.\n"); remove_client(c); return 0; }
+    } else { send_to_client(c, "ERROR: Rol invalido.\n"); remove_client(c); return NULL; }
 
     while ((bytes = recv(c->sock, buffer, BUFFER_SIZE - 1, 0)) > 0) {
         buffer[bytes] = '\0';
@@ -219,16 +218,16 @@ DWORD WINAPI client_thread(LPVOID arg) {
 
     log_event_client(c, "Cliente desconectado.");
     remove_client(c);
-    return 0;
+    return NULL;
 }
 
 // ---------- Hilo simulación metro ----------
-DWORD WINAPI metro_thread(LPVOID arg) {
+void *metro_thread(void *arg) {
     int viaje_ticks = 0;
     int esperando = 0;
 
     while(1) {
-        Sleep(1000); // tick cada segundo
+        sleep(1); // tick cada segundo
 
         if(detenido) {
             bateria += BATTERY_RECHARGE;
@@ -236,7 +235,6 @@ DWORD WINAPI metro_thread(LPVOID arg) {
             continue;
         }
 
-        // Inicio de espera
         if(!esperando) {
             char msg[128];
             sprintf(msg, "en estación %d", estacion);
@@ -248,40 +246,26 @@ DWORD WINAPI metro_thread(LPVOID arg) {
             continue;
         }
 
-        // Espera de 20s
         if(esperando && viaje_ticks < 20) {
             viaje_ticks++;
             continue;
         }
 
-        // Fin de espera → viajar
         if(esperando && viaje_ticks == 20) {
             int siguiente = estacion + direccion;
             char msg[128];
             sprintf(msg, "viajando de %d a %d", estacion, siguiente);
             log_event(msg);
 
-            // Simula viaje de 10s
-            /*for(int i=0;i<10;i++){
-                Sleep(1000);
-                // aquí podrías disminuir batería en tiempo real si querés
-                bateria -= BATTERY_DECAY/10;
-                if(bateria<0) bateria=0;
-            }*/
+            sleep(10);
 
-            
-            // Simula viaje de 10s
-            Sleep(10000);
-
-            // Al llegar a la estación, reducir batería 5%
             bateria -= 5;
             if(bateria < 0) bateria = 0;
 
-            // Si batería se agotó → parar 10s para recargar
             if(bateria == 0) {
                 log_event("[BATERIA AGOTADA] Metro detenido 10s para recargar.");
-                Sleep(10000);
-                bateria = 20; // recarga parcial, o puedes poner 100 si quieres full
+                sleep(10);
+                bateria = 20;
                 log_event("[BATERIA RECARGADA] Metro reanuda recorrido.");
             }
 
@@ -289,27 +273,26 @@ DWORD WINAPI metro_thread(LPVOID arg) {
             estaciones_recorridas++;
             esperando = 0;
 
-            // Cambio de dirección al llegar a extremos
             if(estacion == NUM_ESTACIONES || estacion == 1) {
                 log_event("[cambio de direccion]");
                 direccion *= -1;
             }
         }
     }
-    return 0;
+    return NULL;
 }
 
 // ---------- Hilo telemetría ----------
-DWORD WINAPI telemetry_thread(LPVOID arg) {
+void *telemetry_thread(void *arg) {
     while (1) {
-        Sleep(10000); // cada 10s
-        EnterCriticalSection(&clients_lock);
+        sleep(10);
+        pthread_mutex_lock(&clients_lock);
         for(int i = 0; i < num_clients; i++){
-            send_telemetry(clients[i]); // individual por cliente
+            send_telemetry(clients[i]);
         }
-        LeaveCriticalSection(&clients_lock);
+        pthread_mutex_unlock(&clients_lock);
     }
-    return 0;
+    return NULL;
 }
 
 // ---------- Main ----------
@@ -318,35 +301,42 @@ int main(int argc, char *argv[]) {
     int port = atoi(argv[1]);
     logFile = fopen(argv[2], "a");
 
-    WSADATA wsa; if (WSAStartup(MAKEWORD(2,2), &wsa)!=0){ printf("Error Winsock\n"); return 1; }
-    InitializeCriticalSection(&clients_lock);
+    pthread_mutex_init(&clients_lock, NULL);
 
-    SOCKET server = socket(AF_INET, SOCK_STREAM, 0);
-    struct sockaddr_in addr; addr.sin_family=AF_INET; addr.sin_port=htons(port); addr.sin_addr.s_addr=INADDR_ANY;
-    if (bind(server,(struct sockaddr*)&addr,sizeof(addr))==SOCKET_ERROR){ printf("Error bind\n"); return 1; }
+    int server = socket(AF_INET, SOCK_STREAM, 0);
+    struct sockaddr_in addr; 
+    addr.sin_family=AF_INET; 
+    addr.sin_port=htons(port); 
+    addr.sin_addr.s_addr=INADDR_ANY;
+
+    if (bind(server,(struct sockaddr*)&addr,sizeof(addr))<0){ perror("Error bind"); return 1; }
     listen(server, 5);
 
     log_event("Servidor iniciado.");
 
-    CreateThread(NULL,0,metro_thread,NULL,0,NULL);
-    CreateThread(NULL,0,telemetry_thread,NULL,0,NULL);
+    pthread_t t1, t2;
+    pthread_create(&t1,NULL,metro_thread,NULL);
+    pthread_create(&t2,NULL,telemetry_thread,NULL);
 
     while(1){
-        struct sockaddr_in cliaddr; int len=sizeof(cliaddr);
-        SOCKET client_sock = accept(server,(struct sockaddr*)&cliaddr,&len);
+        struct sockaddr_in cliaddr; socklen_t len=sizeof(cliaddr);
+        int client_sock = accept(server,(struct sockaddr*)&cliaddr,&len);
         Client *c = (Client*)malloc(sizeof(Client));
-        if(!c){ closesocket(client_sock); continue; }
+        if(!c){ close(client_sock); continue; }
         c->sock = client_sock; c->addr = cliaddr; c->isAdmin = 0;
 
-        EnterCriticalSection(&clients_lock);
-        if(num_clients<MAX_CLIENTS){ clients[num_clients++] = c; CreateThread(NULL,0,client_thread,c,0,NULL); }
-        else { send(client_sock,"Servidor lleno.\n",16,0); closesocket(client_sock); free(c); }
-        LeaveCriticalSection(&clients_lock);
+        pthread_mutex_lock(&clients_lock);
+        if(num_clients<MAX_CLIENTS){ 
+            clients[num_clients++] = c; 
+            pthread_t tid; pthread_create(&tid,NULL,client_thread,c);
+            pthread_detach(tid);
+        }
+        else { send(client_sock,"Servidor lleno.\n",16,0); close(client_sock); free(c); }
+        pthread_mutex_unlock(&clients_lock);
     }
 
-    closesocket(server);
+    close(server);
     if(logFile) fclose(logFile);
-    DeleteCriticalSection(&clients_lock);
-    WSACleanup();
+    pthread_mutex_destroy(&clients_lock);
     return 0;
 }

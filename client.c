@@ -1,16 +1,19 @@
-// client.c - Cliente Metro Autónomo (Windows)
-// Compilar: gcc client.c -o client.exe -lws2_32
+// client.c - Cliente Metro Autónomo (Linux)
+// Compilar: gcc client.c -o client -lpthread
 
-#include <winsock2.h>
-#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
 
 #define BUFFER_SIZE 1024
 
-DWORD WINAPI recv_thread(LPVOID arg) {
-    SOCKET sock = *(SOCKET*)arg;
+void* recv_thread(void* arg) {
+    int sock = *(int*)arg;
     char buffer[BUFFER_SIZE];
     int bytes;
     while ((bytes = recv(sock, buffer, BUFFER_SIZE - 1, 0)) > 0) {
@@ -19,7 +22,7 @@ DWORD WINAPI recv_thread(LPVOID arg) {
     }
     printf("Conexión cerrada por el servidor.\n");
     exit(0);
-    return 0;
+    return NULL;
 }
 
 int main(int argc, char *argv[]) {
@@ -31,47 +34,45 @@ int main(int argc, char *argv[]) {
     char *server_ip = argv[1];
     int port = atoi(argv[2]);
 
-    WSADATA wsa;
-    if (WSAStartup(MAKEWORD(2,2), &wsa) != 0) {
-        printf("Error al inicializar Winsock.\n");
-        return 1;
-    }
-
-    SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
-    if (sock == INVALID_SOCKET) {
-        printf("Error al crear socket.\n");
-        WSACleanup();
+    // Crear socket
+    int sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (sock < 0) {
+        perror("Error al crear socket");
         return 1;
     }
 
     struct sockaddr_in server;
     server.sin_family = AF_INET;
     server.sin_port = htons(port);
-    server.sin_addr.s_addr = inet_addr(server_ip);
+    if (inet_pton(AF_INET, server_ip, &server.sin_addr) <= 0) {
+        perror("Dirección inválida");
+        close(sock);
+        return 1;
+    }
 
+    // Conexión
     if (connect(sock, (struct sockaddr*)&server, sizeof(server)) < 0) {
-        printf("Error al conectar con el servidor.\n");
-        closesocket(sock);
-        WSACleanup();
+        perror("Error al conectar con el servidor");
+        close(sock);
         return 1;
     }
 
     printf("Conectado al servidor %s:%d\n", server_ip, port);
 
-    // Hilo para recibir mensajes
-    CreateThread(NULL, 0, recv_thread, &sock, 0, NULL);
+    // Hilo receptor
+    pthread_t tid;
+    pthread_create(&tid, NULL, recv_thread, &sock);
 
-    // Bucle de entrada de usuario
+    // Entrada usuario
     char input[BUFFER_SIZE];
     while (1) {
         if (fgets(input, sizeof(input), stdin) == NULL) break;
-        if (send(sock, input, (int)strlen(input), 0) == SOCKET_ERROR) {
-            printf("Error al enviar datos.\n");
+        if (send(sock, input, strlen(input), 0) < 0) {
+            perror("Error al enviar datos");
             break;
         }
     }
 
-    closesocket(sock);
-    WSACleanup();
+    close(sock);
     return 0;
 }
