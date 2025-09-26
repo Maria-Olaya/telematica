@@ -1,6 +1,5 @@
-// server.c - Servidor Metro Autónomo Telemetría (Linux/POSIX)
-// server_linux.c - Servidor Metro Autónomo Telemetría (Linux)
-// Compilar: gcc server_linux.c -o server_linux -lpthread
+// server.c - Servidor Metro Autónomo Telemetría (Linux)
+// Compilar: gcc server.c -o server -lpthread
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -318,8 +317,8 @@ int main(int argc,char *argv[]){
     log_event("Servidor iniciado.");
 
     pthread_t metro_tid, telem_tid;
-    pthread_create(&metro_tid,NULL,metro_thread,NULL);
-    pthread_create(&telem_tid,NULL,telemetry_thread,NULL);
+    pthread_create(&metro_tid, NULL, metro_thread, NULL);
+    pthread_create(&telem_tid, NULL, telemetry_thread, NULL);
 
     while(1){
         struct sockaddr_in cliaddr; socklen_t len=sizeof(cliaddr);
@@ -331,7 +330,7 @@ int main(int argc,char *argv[]){
         c->sock=client_sock; c->addr=cliaddr; c->isAdmin=0;
 
         pthread_mutex_lock(&clients_lock);
-        if(num_clients<MAX_CLIENTS){ clients[num_clients++]=c; pthread_t tid; pthread_create(&tid,NULL,client_thread,c,NULL);}
+        if(num_clients<MAX_CLIENTS){ clients[num_clients++]=c; pthread_t tid; pthread_create(&tid,NULL,client_thread,c);}
         else{ send(client_sock,"Servidor lleno.\n",16,0); close(client_sock); free(c);}
         pthread_mutex_unlock(&clients_lock);
     }

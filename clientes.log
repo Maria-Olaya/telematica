@@ -3,3 +3,13 @@
 [16:24:17]  (IP:127.0.0.1) -> Cliente desconectado.
 [16:24:24] alice (IP:127.0.0.1) -> Cliente desconectado.
 [16:24:56] alice (IP:127.0.0.1) -> Cliente desconectado.
+[22:42:36]  (IP:127.0.0.1) -> Intento de login admin fallido.
+[22:42:36]  (IP:127.0.0.1) -> Cliente desconectado.
+[22:42:44]  (IP:127.0.0.1) -> Intento de login admin fallido.
+[22:42:44]  (IP:127.0.0.1) -> Cliente desconectado.
+[22:42:50]  (IP:127.0.0.1) -> Intento de login admin fallido.
+[22:42:50]  (IP:127.0.0.1) -> Cliente desconectado.
+[22:42:57] alice (IP:127.0.0.1) -> Administrador autenticado.
+[22:43:13] alice (IP:127.0.0.1) -> Cliente desconectado.
+[22:43:44] alice (IP:127.0.0.1) -> CMD SPEEDUP -> Vel=2
+[22:44:26] alice (IP:127.0.0.1) -> CMD SPEEDUP -> Vel=3
