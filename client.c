@@ -142,6 +142,11 @@ int main(int argc, char *argv[]) {
 
     // 3) Esperar veredicto
     int who = wait_for_auth(g_sock);
+
+    if (who == -1) {
+        printf("¡Credenciales incorrectas! Intenta de nuevo.\n");
+    }
+
     if (who == 1) {
         g_is_admin = 1;
         printf("\nComandos: SPEEDUP | SLOWDOWN | STOPNOW | STARTNOW\n");
@@ -152,6 +157,9 @@ int main(int argc, char *argv[]) {
         close(g_sock);
         return 0;
     }
+
+
+    
 
     // 4) Hilo receptor
     pthread_t tid;

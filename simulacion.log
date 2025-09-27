@@ -1,643 +1,971 @@
-[16:22:39] Servidor iniciado.
-[16:22:40] en estación 1
-[16:22:40] espera de 20s en estación 1
-[16:22:48] Cliente intentando conectarse desde 127.0.0.1:49595
-[16:22:51] Cliente conectado: alice (IP: 127.0.0.1) Rol: ADMIN
-[16:23:01] viajando de 1 a 2 a vel 1
-[16:23:13] en estación 2
-[16:23:13] espera de 20s en estación 2
-[16:23:34] viajando de 2 a 3 a vel 1
-[16:23:45] en estación 3
-[16:23:45] espera de 20s en estación 3
-[16:24:06] viajando de 3 a 4 a vel 1
-[16:24:13] Cliente intentando conectarse desde 127.0.0.1:63503
-[16:24:17] en estación 4
-[16:24:17] espera de 20s en estación 4
-[16:24:21] Cliente intentando conectarse desde 127.0.0.1:63597
-[16:24:38] viajando de 4 a 5 a vel 1
-[16:24:48] [cambio de direccion]
-[16:24:49] en estación 5
-[16:24:49] espera de 20s en estación 5
-[16:25:11] viajando de 5 a 4 a vel 1
-[16:25:22] en estación 4
-[16:25:22] espera de 20s en estación 4
-[16:25:43] viajando de 4 a 3 a vel 1
-[16:25:54] en estación 3
-[16:25:54] espera de 20s en estación 3
-[16:26:15] viajando de 3 a 2 a vel 1
-[16:26:26] en estación 2
-[16:26:26] espera de 20s en estación 2
-[16:26:47] viajando de 2 a 1 a vel 1
-[16:26:57] [cambio de direccion]
-[16:26:58] en estación 1
-[16:26:58] espera de 20s en estación 1
-[16:27:20] viajando de 1 a 2 a vel 1
-[16:27:31] en estación 2
-[16:27:31] espera de 20s en estación 2
-[16:27:52] viajando de 2 a 3 a vel 1
-[16:28:03] en estación 3
-[16:28:03] espera de 20s en estación 3
-[16:28:24] viajando de 3 a 4 a vel 1
-[16:28:35] en estación 4
-[16:28:35] espera de 20s en estación 4
-[16:28:56] viajando de 4 a 5 a vel 1
-[16:29:06] [cambio de direccion]
-[16:29:07] en estación 5
-[16:29:07] espera de 20s en estación 5
-[16:29:29] viajando de 5 a 4 a vel 1
-[16:29:40] en estación 4
-[16:29:40] espera de 20s en estación 4
-[16:30:01] viajando de 4 a 3 a vel 1
-[16:30:12] en estación 3
-[16:30:12] espera de 20s en estación 3
-[16:30:33] viajando de 3 a 2 a vel 1
-[16:30:44] en estación 2
-[16:30:44] espera de 20s en estación 2
-[16:31:05] viajando de 2 a 1 a vel 1
-[16:31:15] [cambio de direccion]
-[16:31:16] en estación 1
-[16:31:16] espera de 20s en estación 1
-[16:31:38] viajando de 1 a 2 a vel 1
-[16:31:49] en estación 2
-[16:31:49] espera de 20s en estación 2
-[16:32:10] viajando de 2 a 3 a vel 1
-[16:32:21] en estación 3
-[16:32:21] espera de 20s en estación 3
-[16:32:42] viajando de 3 a 4 a vel 1
-[16:32:53] en estación 4
-[16:32:53] espera de 20s en estación 4
-[16:33:14] viajando de 4 a 5 a vel 1
-[16:33:24] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:33:34] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:33:34] [cambio de direccion]
-[16:33:35] en estación 5
-[16:33:35] espera de 20s en estación 5
-[16:33:57] viajando de 5 a 4 a vel 1
-[16:34:08] en estación 4
-[16:34:08] espera de 20s en estación 4
-[16:34:29] viajando de 4 a 3 a vel 1
-[16:34:40] en estación 3
-[16:34:40] espera de 20s en estación 3
-[16:35:01] viajando de 3 a 2 a vel 1
-[16:35:12] en estación 2
-[16:35:12] espera de 20s en estación 2
-[16:35:33] viajando de 2 a 1 a vel 1
-[16:35:43] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:35:53] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:35:53] [cambio de direccion]
-[16:35:55] en estación 1
-[16:35:55] espera de 20s en estación 1
-[16:36:16] viajando de 1 a 2 a vel 1
-[16:36:27] en estación 2
-[16:36:27] espera de 20s en estación 2
-[16:36:48] viajando de 2 a 3 a vel 1
-[16:36:59] en estación 3
-[16:36:59] espera de 20s en estación 3
-[16:37:20] viajando de 3 a 4 a vel 1
-[16:37:31] en estación 4
-[16:37:31] espera de 20s en estación 4
-[16:37:52] viajando de 4 a 5 a vel 1
-[16:38:02] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:38:12] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:38:12] [cambio de direccion]
-[16:38:13] en estación 5
-[16:38:13] espera de 20s en estación 5
-[16:38:35] viajando de 5 a 4 a vel 1
-[16:38:46] en estación 4
-[16:38:46] espera de 20s en estación 4
-[16:39:07] viajando de 4 a 3 a vel 1
-[16:39:18] en estación 3
-[16:39:18] espera de 20s en estación 3
-[16:39:39] viajando de 3 a 2 a vel 1
-[16:39:50] en estación 2
-[16:39:50] espera de 20s en estación 2
-[16:40:11] viajando de 2 a 1 a vel 1
-[16:40:21] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:40:32] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:40:32] [cambio de direccion]
-[16:40:33] en estación 1
-[16:40:33] espera de 20s en estación 1
-[16:40:54] viajando de 1 a 2 a vel 1
-[16:41:05] en estación 2
-[16:41:05] espera de 20s en estación 2
-[16:41:26] viajando de 2 a 3 a vel 1
-[16:41:37] en estación 3
-[16:41:37] espera de 20s en estación 3
-[16:41:58] viajando de 3 a 4 a vel 1
-[16:42:09] en estación 4
-[16:42:09] espera de 20s en estación 4
-[16:42:30] viajando de 4 a 5 a vel 1
-[16:42:41] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:42:51] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:42:51] [cambio de direccion]
-[16:42:52] en estación 5
-[16:42:52] espera de 20s en estación 5
-[16:43:13] viajando de 5 a 4 a vel 1
-[16:43:24] en estación 4
-[16:43:24] espera de 20s en estación 4
-[16:43:45] viajando de 4 a 3 a vel 1
-[16:43:56] en estación 3
-[16:43:56] espera de 20s en estación 3
-[16:44:17] viajando de 3 a 2 a vel 1
-[16:44:28] en estación 2
-[16:44:28] espera de 20s en estación 2
-[16:44:49] viajando de 2 a 1 a vel 1
-[16:45:00] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:45:10] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:45:10] [cambio de direccion]
-[16:45:11] en estación 1
-[16:45:11] espera de 20s en estación 1
-[16:45:32] viajando de 1 a 2 a vel 1
-[16:45:43] en estación 2
-[16:45:43] espera de 20s en estación 2
-[16:46:04] viajando de 2 a 3 a vel 1
-[16:46:15] en estación 3
-[16:46:15] espera de 20s en estación 3
-[16:46:36] viajando de 3 a 4 a vel 1
-[16:46:47] en estación 4
-[16:46:47] espera de 20s en estación 4
-[16:47:08] viajando de 4 a 5 a vel 1
-[16:47:19] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:47:29] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:47:29] [cambio de direccion]
-[16:47:30] en estación 5
-[16:47:30] espera de 20s en estación 5
-[16:47:51] viajando de 5 a 4 a vel 1
-[16:48:02] en estación 4
-[16:48:02] espera de 20s en estación 4
-[16:48:23] viajando de 4 a 3 a vel 1
-[16:48:34] en estación 3
-[16:48:34] espera de 20s en estación 3
-[16:48:55] viajando de 3 a 2 a vel 1
-[16:49:06] en estación 2
-[16:49:06] espera de 20s en estación 2
-[16:49:27] viajando de 2 a 1 a vel 1
-[16:49:38] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:49:48] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:49:48] [cambio de direccion]
-[16:49:49] en estación 1
-[16:49:49] espera de 20s en estación 1
-[16:50:10] viajando de 1 a 2 a vel 1
-[16:50:21] en estación 2
-[16:50:21] espera de 20s en estación 2
-[16:50:42] viajando de 2 a 3 a vel 1
-[16:50:53] en estación 3
-[16:50:53] espera de 20s en estación 3
-[16:51:14] viajando de 3 a 4 a vel 1
-[16:51:25] en estación 4
-[16:51:25] espera de 20s en estación 4
-[16:51:46] viajando de 4 a 5 a vel 1
-[16:51:56] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:52:07] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:52:07] [cambio de direccion]
-[16:52:08] en estación 5
-[16:52:08] espera de 20s en estación 5
-[16:52:29] viajando de 5 a 4 a vel 1
-[16:52:40] en estación 4
-[16:52:40] espera de 20s en estación 4
-[16:53:01] viajando de 4 a 3 a vel 1
-[16:53:12] en estación 3
-[16:53:12] espera de 20s en estación 3
-[16:53:33] viajando de 3 a 2 a vel 1
-[16:53:44] en estación 2
-[16:53:44] espera de 20s en estación 2
-[16:54:05] viajando de 2 a 1 a vel 1
-[16:54:15] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:54:25] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:54:25] [cambio de direccion]
-[16:54:26] en estación 1
-[16:54:26] espera de 20s en estación 1
-[16:54:48] viajando de 1 a 2 a vel 1
-[16:54:59] en estación 2
-[16:54:59] espera de 20s en estación 2
-[16:55:20] viajando de 2 a 3 a vel 1
-[16:55:31] en estación 3
-[16:55:31] espera de 20s en estación 3
-[16:55:52] viajando de 3 a 4 a vel 1
-[16:56:03] en estación 4
-[16:56:03] espera de 20s en estación 4
-[16:56:24] viajando de 4 a 5 a vel 1
-[16:56:34] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:56:44] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:56:44] [cambio de direccion]
-[16:56:45] en estación 5
-[16:56:45] espera de 20s en estación 5
-[16:57:07] viajando de 5 a 4 a vel 1
-[16:57:18] en estación 4
-[16:57:18] espera de 20s en estación 4
-[16:57:39] viajando de 4 a 3 a vel 1
-[16:57:50] en estación 3
-[16:57:50] espera de 20s en estación 3
-[16:58:11] viajando de 3 a 2 a vel 1
-[16:58:22] en estación 2
-[16:58:22] espera de 20s en estación 2
-[16:58:43] viajando de 2 a 1 a vel 1
-[16:58:53] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[16:59:03] [BATERIA RECARGADA] Metro reanuda recorrido.
-[16:59:03] [cambio de direccion]
-[16:59:04] en estación 1
-[16:59:04] espera de 20s en estación 1
-[16:59:26] viajando de 1 a 2 a vel 1
-[16:59:37] en estación 2
-[16:59:37] espera de 20s en estación 2
-[16:59:58] viajando de 2 a 3 a vel 1
-[17:00:09] en estación 3
-[17:00:09] espera de 20s en estación 3
-[17:00:30] viajando de 3 a 4 a vel 1
-[17:00:41] en estación 4
-[17:00:41] espera de 20s en estación 4
-[17:01:02] viajando de 4 a 5 a vel 1
-[22:41:57] Servidor iniciado.
-[22:41:58] en estación 1
-[22:41:58] espera de 20s en estación 1
-[22:42:19] viajando de 1 a 2 a vel 1
-[22:42:30] en estación 2
-[22:42:30] espera de 20s en estación 2
-[22:42:31] Cliente intentando conectarse desde 127.0.0.1:37636
-[22:42:39] Cliente intentando conectarse desde 127.0.0.1:54226
-[22:42:46] Cliente intentando conectarse desde 127.0.0.1:46758
-[22:42:51] viajando de 2 a 3 a vel 1
-[22:42:52] Cliente intentando conectarse desde 127.0.0.1:41846
-[22:42:57] Cliente conectado: alice (IP: 127.0.0.1) Rol: ADMIN
-[22:43:02] en estación 3
-[22:43:02] espera de 20s en estación 3
-[22:43:05] Cliente intentando conectarse desde 127.0.0.1:35280
-[22:43:23] viajando de 3 a 4 a vel 1
-[22:43:34] en estación 4
-[22:43:34] espera de 20s en estación 4
-[22:43:55] viajando de 4 a 5 a vel 2
-[22:44:00] [cambio de direccion]
-[22:44:01] en estación 5
-[22:44:01] espera de 20s en estación 5
-[22:44:22] viajando de 5 a 4 a vel 2
-[22:44:28] en estación 4
-[22:44:28] espera de 20s en estación 4
-[22:44:49] viajando de 4 a 3 a vel 3
-[22:44:54] en estación 3
-[22:44:54] espera de 20s en estación 3
-[22:45:15] viajando de 3 a 2 a vel 3
-[22:45:20] en estación 2
-[22:45:20] espera de 20s en estación 2
-[22:45:41] viajando de 2 a 1 a vel 3
-[22:45:45] [cambio de direccion]
-[22:45:46] en estación 1
-[22:45:46] espera de 20s en estación 1
-[22:46:07] viajando de 1 a 2 a vel 3
-[22:46:12] en estación 2
-[22:46:12] espera de 20s en estación 2
-[22:46:33] viajando de 2 a 3 a vel 3
-[22:46:38] en estación 3
-[22:46:38] espera de 20s en estación 3
-[22:46:59] viajando de 3 a 4 a vel 3
-[22:47:04] en estación 4
-[22:47:04] espera de 20s en estación 4
-[22:47:25] viajando de 4 a 5 a vel 3
-[22:47:29] [cambio de direccion]
-[22:47:30] en estación 5
-[22:47:30] espera de 20s en estación 5
-[22:47:51] viajando de 5 a 4 a vel 3
-[22:47:56] en estación 4
-[22:47:56] espera de 20s en estación 4
-[22:48:17] viajando de 4 a 3 a vel 3
-[22:48:22] en estación 3
-[22:48:22] espera de 20s en estación 3
-[22:48:43] viajando de 3 a 2 a vel 3
-[22:48:48] en estación 2
-[22:48:48] espera de 20s en estación 2
-[22:49:09] viajando de 2 a 1 a vel 3
-[22:49:13] [cambio de direccion]
-[22:49:14] en estación 1
-[22:49:14] espera de 20s en estación 1
-[22:49:35] viajando de 1 a 2 a vel 3
-[22:49:40] en estación 2
-[22:49:40] espera de 20s en estación 2
-[22:50:01] viajando de 2 a 3 a vel 3
-[22:50:06] en estación 3
-[22:50:06] espera de 20s en estación 3
-[22:50:27] viajando de 3 a 4 a vel 3
-[22:50:32] en estación 4
-[22:50:32] espera de 20s en estación 4
-[22:50:53] viajando de 4 a 5 a vel 3
-[22:50:57] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[22:51:07] [BATERIA RECARGADA] Metro reanuda recorrido.
-[22:51:07] [cambio de direccion]
-[22:51:08] en estación 5
-[22:51:08] espera de 20s en estación 5
-[22:51:29] viajando de 5 a 4 a vel 3
-[22:51:34] en estación 4
-[22:51:34] espera de 20s en estación 4
-[22:51:55] viajando de 4 a 3 a vel 3
-[22:52:00] en estación 3
-[22:52:00] espera de 20s en estación 3
-[22:52:21] viajando de 3 a 2 a vel 3
-[22:52:26] en estación 2
-[22:52:26] espera de 20s en estación 2
-[22:52:47] viajando de 2 a 1 a vel 3
-[22:52:51] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[22:53:01] [BATERIA RECARGADA] Metro reanuda recorrido.
-[22:53:01] [cambio de direccion]
-[22:53:02] en estación 1
-[22:53:02] espera de 20s en estación 1
-[22:53:23] viajando de 1 a 2 a vel 3
-[22:53:28] en estación 2
-[22:53:28] espera de 20s en estación 2
-[22:53:49] viajando de 2 a 3 a vel 3
-[22:53:54] en estación 3
-[22:53:54] espera de 20s en estación 3
-[22:54:15] viajando de 3 a 4 a vel 3
-[22:54:20] en estación 4
-[22:54:20] espera de 20s en estación 4
-[22:54:41] viajando de 4 a 5 a vel 3
-[22:54:45] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[22:54:55] [BATERIA RECARGADA] Metro reanuda recorrido.
-[22:54:55] [cambio de direccion]
-[22:54:56] en estación 5
-[22:54:56] espera de 20s en estación 5
-[22:55:17] viajando de 5 a 4 a vel 3
-[22:55:22] en estación 4
-[22:55:22] espera de 20s en estación 4
-[22:55:43] viajando de 4 a 3 a vel 3
-[22:55:48] en estación 3
-[22:55:48] espera de 20s en estación 3
-[22:56:09] viajando de 3 a 2 a vel 3
-[22:56:14] en estación 2
-[22:56:14] espera de 20s en estación 2
-[22:56:35] viajando de 2 a 1 a vel 3
-[22:56:39] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[22:56:49] [BATERIA RECARGADA] Metro reanuda recorrido.
-[22:56:49] [cambio de direccion]
-[22:56:50] en estación 1
-[22:56:50] espera de 20s en estación 1
-[22:57:11] viajando de 1 a 2 a vel 3
-[22:57:16] en estación 2
-[22:57:16] espera de 20s en estación 2
-[22:57:37] viajando de 2 a 3 a vel 3
-[22:57:42] en estación 3
-[22:57:42] espera de 20s en estación 3
-[22:58:03] viajando de 3 a 4 a vel 3
-[22:58:08] en estación 4
-[22:58:08] espera de 20s en estación 4
-[22:58:29] viajando de 4 a 5 a vel 3
-[22:58:33] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[22:58:43] [BATERIA RECARGADA] Metro reanuda recorrido.
-[22:58:43] [cambio de direccion]
-[22:58:44] en estación 5
-[22:58:44] espera de 20s en estación 5
-[22:59:05] viajando de 5 a 4 a vel 3
-[22:59:10] en estación 4
-[22:59:10] espera de 20s en estación 4
-[22:59:31] viajando de 4 a 3 a vel 3
-[22:59:36] en estación 3
-[22:59:36] espera de 20s en estación 3
-[22:59:57] viajando de 3 a 2 a vel 3
-[23:00:02] en estación 2
-[23:00:02] espera de 20s en estación 2
-[23:00:23] viajando de 2 a 1 a vel 3
-[23:00:27] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:00:37] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:00:37] [cambio de direccion]
-[23:00:38] en estación 1
-[23:00:38] espera de 20s en estación 1
-[23:00:59] viajando de 1 a 2 a vel 3
-[23:01:04] en estación 2
-[23:01:04] espera de 20s en estación 2
-[23:01:25] viajando de 2 a 3 a vel 3
-[23:01:30] en estación 3
-[23:01:30] espera de 20s en estación 3
-[23:01:51] viajando de 3 a 4 a vel 3
-[23:01:56] en estación 4
-[23:01:56] espera de 20s en estación 4
-[23:02:17] viajando de 4 a 5 a vel 3
-[23:02:21] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:02:31] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:02:31] [cambio de direccion]
-[23:02:32] en estación 5
-[23:02:32] espera de 20s en estación 5
-[23:02:53] viajando de 5 a 4 a vel 3
-[23:02:58] en estación 4
-[23:02:58] espera de 20s en estación 4
-[23:03:19] viajando de 4 a 3 a vel 3
-[23:03:24] en estación 3
-[23:03:24] espera de 20s en estación 3
-[23:03:45] viajando de 3 a 2 a vel 3
-[23:03:50] en estación 2
-[23:03:50] espera de 20s en estación 2
-[23:04:11] viajando de 2 a 1 a vel 3
-[23:04:15] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:04:25] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:04:25] [cambio de direccion]
-[23:04:26] en estación 1
-[23:04:26] espera de 20s en estación 1
-[23:04:47] viajando de 1 a 2 a vel 3
-[23:04:52] en estación 2
-[23:04:52] espera de 20s en estación 2
-[23:05:13] viajando de 2 a 3 a vel 3
-[23:05:18] en estación 3
-[23:05:18] espera de 20s en estación 3
-[23:05:39] viajando de 3 a 4 a vel 3
-[23:05:44] en estación 4
-[23:05:44] espera de 20s en estación 4
-[23:06:05] viajando de 4 a 5 a vel 3
-[23:06:09] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:06:19] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:06:19] [cambio de direccion]
-[23:06:20] en estación 5
-[23:06:20] espera de 20s en estación 5
-[23:06:41] viajando de 5 a 4 a vel 3
-[23:06:46] en estación 4
-[23:06:46] espera de 20s en estación 4
-[23:07:07] viajando de 4 a 3 a vel 3
-[23:07:12] en estación 3
-[23:07:12] espera de 20s en estación 3
-[23:07:33] viajando de 3 a 2 a vel 3
-[23:07:38] en estación 2
-[23:07:38] espera de 20s en estación 2
-[23:07:59] viajando de 2 a 1 a vel 3
-[23:08:03] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:08:13] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:08:13] [cambio de direccion]
-[23:08:14] en estación 1
-[23:08:14] espera de 20s en estación 1
-[23:08:35] viajando de 1 a 2 a vel 3
-[23:08:40] en estación 2
-[23:08:40] espera de 20s en estación 2
-[23:09:01] viajando de 2 a 3 a vel 3
-[23:09:06] en estación 3
-[23:09:06] espera de 20s en estación 3
-[23:09:27] viajando de 3 a 4 a vel 3
-[23:09:32] en estación 4
-[23:09:32] espera de 20s en estación 4
-[23:09:53] viajando de 4 a 5 a vel 3
-[23:09:57] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:10:07] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:10:07] [cambio de direccion]
-[23:10:08] en estación 5
-[23:10:08] espera de 20s en estación 5
-[23:10:29] viajando de 5 a 4 a vel 3
-[23:10:34] en estación 4
-[23:10:34] espera de 20s en estación 4
-[23:10:55] viajando de 4 a 3 a vel 3
-[23:11:00] en estación 3
-[23:11:00] espera de 20s en estación 3
-[23:11:21] viajando de 3 a 2 a vel 3
-[23:11:26] en estación 2
-[23:11:26] espera de 20s en estación 2
-[23:11:47] viajando de 2 a 1 a vel 3
-[23:11:51] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:12:01] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:12:01] [cambio de direccion]
-[23:12:02] en estación 1
-[23:12:02] espera de 20s en estación 1
-[23:12:23] viajando de 1 a 2 a vel 3
-[23:12:28] en estación 2
-[23:12:28] espera de 20s en estación 2
-[23:12:49] viajando de 2 a 3 a vel 3
-[23:12:54] en estación 3
-[23:12:54] espera de 20s en estación 3
-[23:13:15] viajando de 3 a 4 a vel 3
-[23:13:20] en estación 4
-[23:13:20] espera de 20s en estación 4
-[23:13:41] viajando de 4 a 5 a vel 3
-[23:13:45] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:13:55] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:13:55] [cambio de direccion]
-[23:13:56] en estación 5
-[23:13:56] espera de 20s en estación 5
-[23:14:17] viajando de 5 a 4 a vel 3
-[23:14:22] en estación 4
-[23:14:22] espera de 20s en estación 4
-[23:14:43] viajando de 4 a 3 a vel 3
-[23:14:48] en estación 3
-[23:14:48] espera de 20s en estación 3
-[23:15:09] viajando de 3 a 2 a vel 3
-[23:15:14] en estación 2
-[23:15:14] espera de 20s en estación 2
-[23:15:35] viajando de 2 a 1 a vel 3
-[23:15:39] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:15:49] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:15:49] [cambio de direccion]
-[23:15:50] en estación 1
-[23:15:50] espera de 20s en estación 1
-[23:16:11] viajando de 1 a 2 a vel 3
-[23:16:16] en estación 2
-[23:16:16] espera de 20s en estación 2
-[23:16:37] viajando de 2 a 3 a vel 3
-[23:16:42] en estación 3
-[23:16:42] espera de 20s en estación 3
-[23:17:03] viajando de 3 a 4 a vel 3
-[23:17:08] en estación 4
-[23:17:08] espera de 20s en estación 4
-[23:17:29] viajando de 4 a 5 a vel 3
-[23:17:33] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:17:43] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:17:43] [cambio de direccion]
-[23:17:44] en estación 5
-[23:17:44] espera de 20s en estación 5
-[23:18:05] viajando de 5 a 4 a vel 3
-[23:18:10] en estación 4
-[23:18:10] espera de 20s en estación 4
-[23:18:31] viajando de 4 a 3 a vel 3
-[23:18:36] en estación 3
-[23:18:36] espera de 20s en estación 3
-[23:18:57] viajando de 3 a 2 a vel 3
-[23:19:02] en estación 2
-[23:19:02] espera de 20s en estación 2
-[23:19:23] viajando de 2 a 1 a vel 3
-[23:19:27] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:19:37] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:19:37] [cambio de direccion]
-[23:19:38] en estación 1
-[23:19:38] espera de 20s en estación 1
-[23:19:59] viajando de 1 a 2 a vel 3
-[23:20:04] en estación 2
-[23:20:04] espera de 20s en estación 2
-[23:20:25] viajando de 2 a 3 a vel 3
-[23:20:30] en estación 3
-[23:20:30] espera de 20s en estación 3
-[23:20:51] viajando de 3 a 4 a vel 3
-[23:20:56] en estación 4
-[23:20:56] espera de 20s en estación 4
-[23:21:17] viajando de 4 a 5 a vel 3
-[23:21:21] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:21:31] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:21:31] [cambio de direccion]
-[23:21:32] en estación 5
-[23:21:32] espera de 20s en estación 5
-[23:21:53] viajando de 5 a 4 a vel 3
-[23:21:58] en estación 4
-[23:21:58] espera de 20s en estación 4
-[23:22:19] viajando de 4 a 3 a vel 3
-[23:22:24] en estación 3
-[23:22:24] espera de 20s en estación 3
-[23:22:45] viajando de 3 a 2 a vel 3
-[23:22:50] en estación 2
-[23:22:50] espera de 20s en estación 2
-[23:23:11] viajando de 2 a 1 a vel 3
-[23:23:15] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:23:25] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:23:25] [cambio de direccion]
-[23:23:26] en estación 1
-[23:23:26] espera de 20s en estación 1
-[23:23:47] viajando de 1 a 2 a vel 3
-[23:23:52] en estación 2
-[23:23:52] espera de 20s en estación 2
-[23:24:13] viajando de 2 a 3 a vel 3
-[23:24:18] en estación 3
-[23:24:18] espera de 20s en estación 3
-[23:24:39] viajando de 3 a 4 a vel 3
-[23:24:44] en estación 4
-[23:24:44] espera de 20s en estación 4
-[23:25:05] viajando de 4 a 5 a vel 3
-[23:25:09] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:25:19] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:25:19] [cambio de direccion]
-[23:25:20] en estación 5
-[23:25:20] espera de 20s en estación 5
-[23:25:41] viajando de 5 a 4 a vel 3
-[23:25:46] en estación 4
-[23:25:46] espera de 20s en estación 4
-[23:26:07] viajando de 4 a 3 a vel 3
-[23:26:12] en estación 3
-[23:26:12] espera de 20s en estación 3
-[23:26:33] viajando de 3 a 2 a vel 3
-[23:26:38] en estación 2
-[23:26:38] espera de 20s en estación 2
-[23:26:59] viajando de 2 a 1 a vel 3
-[23:27:03] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:27:13] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:27:13] [cambio de direccion]
-[23:27:14] en estación 1
-[23:27:14] espera de 20s en estación 1
-[23:27:35] viajando de 1 a 2 a vel 3
-[23:27:40] en estación 2
-[23:27:40] espera de 20s en estación 2
-[23:28:01] viajando de 2 a 3 a vel 3
-[23:28:06] en estación 3
-[23:28:06] espera de 20s en estación 3
-[23:28:27] viajando de 3 a 4 a vel 3
-[23:28:32] en estación 4
-[23:28:32] espera de 20s en estación 4
-[23:28:53] viajando de 4 a 5 a vel 3
-[23:28:57] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:29:07] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:29:07] [cambio de direccion]
-[23:29:08] en estación 5
-[23:29:08] espera de 20s en estación 5
-[23:29:29] viajando de 5 a 4 a vel 3
-[23:29:34] en estación 4
-[23:29:34] espera de 20s en estación 4
-[23:29:55] viajando de 4 a 3 a vel 3
-[23:30:00] en estación 3
-[23:30:00] espera de 20s en estación 3
-[23:30:21] viajando de 3 a 2 a vel 3
-[23:30:26] en estación 2
-[23:30:26] espera de 20s en estación 2
-[23:30:47] viajando de 2 a 1 a vel 3
-[23:30:51] [BATERIA AGOTADA] Metro detenido 10s para recargar.
-[23:31:01] [BATERIA RECARGADA] Metro reanuda recorrido.
-[23:31:01] [cambio de direccion]
-[23:31:02] en estación 1
-[23:31:02] espera de 20s en estación 1
-[23:31:23] viajando de 1 a 2 a vel 3
-[23:31:28] en estación 2
-[23:31:28] espera de 20s en estación 2
+[19:22:28] Metro viajando...
+[19:22:59] Metro viajando...
+[19:23:30] Metro viajando...
+[19:24:29] Servidor iniciado.
+[19:24:30] en estación 1
+[19:24:30] espera de 20s en estación 1
+[19:24:51] viajando de 1 a 2 a vel 1
+[19:25:02] en estación 2
+[19:25:02] espera de 20s en estación 2
+[19:25:23] viajando de 2 a 3 a vel 1
+[19:25:34] en estación 3
+[19:25:34] espera de 20s en estación 3
+[19:25:55] viajando de 3 a 4 a vel 1
+[19:26:06] en estación 4
+[19:26:06] espera de 20s en estación 4
+[19:26:27] viajando de 4 a 5 a vel 1
+[19:26:37] [cambio de direccion]
+[19:26:38] en estación 5
+[19:26:38] espera de 20s en estación 5
+[19:26:59] viajando de 5 a 4 a vel 1
+[19:27:10] en estación 4
+[19:27:10] espera de 20s en estación 4
+[19:27:31] viajando de 4 a 3 a vel 1
+[19:27:42] en estación 3
+[19:27:42] espera de 20s en estación 3
+[19:28:03] viajando de 3 a 2 a vel 1
+[19:28:14] en estación 2
+[19:28:14] espera de 20s en estación 2
+[19:28:35] viajando de 2 a 1 a vel 1
+[19:28:45] [cambio de direccion]
+[19:28:46] en estación 1
+[19:28:46] espera de 20s en estación 1
+[19:29:07] viajando de 1 a 2 a vel 1
+[19:29:18] en estación 2
+[19:29:18] espera de 20s en estación 2
+[19:29:39] viajando de 2 a 3 a vel 1
+[19:29:50] en estación 3
+[19:29:50] espera de 20s en estación 3
+[19:30:11] viajando de 3 a 4 a vel 1
+[19:30:22] en estación 4
+[19:30:22] espera de 20s en estación 4
+[19:30:43] viajando de 4 a 5 a vel 1
+[19:30:53] [cambio de direccion]
+[19:30:54] en estación 5
+[19:30:54] espera de 20s en estación 5
+[19:31:15] viajando de 5 a 4 a vel 1
+[19:31:26] en estación 4
+[19:31:26] espera de 20s en estación 4
+[19:31:47] viajando de 4 a 3 a vel 1
+[19:31:58] en estación 3
+[19:31:58] espera de 20s en estación 3
+[19:32:19] viajando de 3 a 2 a vel 1
+[19:32:30] en estación 2
+[19:32:30] espera de 20s en estación 2
+[19:32:51] viajando de 2 a 1 a vel 1
+[19:33:01] [cambio de direccion]
+[19:33:02] en estación 1
+[19:33:02] espera de 20s en estación 1
+[19:33:23] viajando de 1 a 2 a vel 1
+[19:33:34] en estación 2
+[19:33:34] espera de 20s en estación 2
+[19:33:55] viajando de 2 a 3 a vel 1
+[19:34:06] en estación 3
+[19:34:06] espera de 20s en estación 3
+[19:34:27] viajando de 3 a 4 a vel 1
+[19:34:38] en estación 4
+[19:34:38] espera de 20s en estación 4
+[19:34:59] viajando de 4 a 5 a vel 1
+[19:35:09] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:35:19] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:35:19] [cambio de direccion]
+[19:35:20] en estación 5
+[19:35:20] espera de 20s en estación 5
+[19:35:41] viajando de 5 a 4 a vel 1
+[19:35:52] en estación 4
+[19:35:52] espera de 20s en estación 4
+[19:36:13] viajando de 4 a 3 a vel 1
+[19:36:24] en estación 3
+[19:36:24] espera de 20s en estación 3
+[19:36:45] viajando de 3 a 2 a vel 1
+[19:36:56] en estación 2
+[19:36:56] espera de 20s en estación 2
+[19:37:17] viajando de 2 a 1 a vel 1
+[19:37:27] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:37:37] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:37:37] [cambio de direccion]
+[19:37:38] en estación 1
+[19:37:38] espera de 20s en estación 1
+[19:37:59] viajando de 1 a 2 a vel 1
+[19:38:10] en estación 2
+[19:38:10] espera de 20s en estación 2
+[19:38:31] viajando de 2 a 3 a vel 1
+[19:38:42] en estación 3
+[19:38:42] espera de 20s en estación 3
+[19:39:03] viajando de 3 a 4 a vel 1
+[19:39:14] en estación 4
+[19:39:14] espera de 20s en estación 4
+[19:39:35] viajando de 4 a 5 a vel 1
+[19:39:45] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:39:55] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:39:55] [cambio de direccion]
+[19:39:56] en estación 5
+[19:39:56] espera de 20s en estación 5
+[19:40:17] viajando de 5 a 4 a vel 1
+[19:40:28] en estación 4
+[19:40:28] espera de 20s en estación 4
+[19:40:49] viajando de 4 a 3 a vel 1
+[19:41:00] en estación 3
+[19:41:00] espera de 20s en estación 3
+[19:41:21] viajando de 3 a 2 a vel 1
+[19:41:32] en estación 2
+[19:41:32] espera de 20s en estación 2
+[19:41:53] viajando de 2 a 1 a vel 1
+[19:42:03] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:42:13] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:42:13] [cambio de direccion]
+[19:42:14] en estación 1
+[19:42:14] espera de 20s en estación 1
+[19:42:35] viajando de 1 a 2 a vel 1
+[19:42:46] en estación 2
+[19:42:46] espera de 20s en estación 2
+[19:43:07] viajando de 2 a 3 a vel 1
+[19:43:18] en estación 3
+[19:43:18] espera de 20s en estación 3
+[19:43:39] viajando de 3 a 4 a vel 1
+[19:43:50] en estación 4
+[19:43:50] espera de 20s en estación 4
+[19:44:11] viajando de 4 a 5 a vel 1
+[19:44:21] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:44:31] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:44:31] [cambio de direccion]
+[19:44:32] en estación 5
+[19:44:32] espera de 20s en estación 5
+[19:44:53] viajando de 5 a 4 a vel 1
+[19:45:04] en estación 4
+[19:45:04] espera de 20s en estación 4
+[19:45:25] viajando de 4 a 3 a vel 1
+[19:45:36] en estación 3
+[19:45:36] espera de 20s en estación 3
+[19:45:57] viajando de 3 a 2 a vel 1
+[19:46:08] en estación 2
+[19:46:08] espera de 20s en estación 2
+[19:46:29] viajando de 2 a 1 a vel 1
+[19:46:39] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:46:49] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:46:49] [cambio de direccion]
+[19:46:50] en estación 1
+[19:46:50] espera de 20s en estación 1
+[19:47:11] viajando de 1 a 2 a vel 1
+[19:47:22] en estación 2
+[19:47:22] espera de 20s en estación 2
+[19:47:43] viajando de 2 a 3 a vel 1
+[19:47:54] en estación 3
+[19:47:54] espera de 20s en estación 3
+[19:48:15] viajando de 3 a 4 a vel 1
+[19:48:26] en estación 4
+[19:48:26] espera de 20s en estación 4
+[19:48:47] viajando de 4 a 5 a vel 1
+[19:48:57] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:49:07] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:49:07] [cambio de direccion]
+[19:49:08] en estación 5
+[19:49:08] espera de 20s en estación 5
+[19:49:29] viajando de 5 a 4 a vel 1
+[19:49:40] en estación 4
+[19:49:40] espera de 20s en estación 4
+[19:50:01] viajando de 4 a 3 a vel 1
+[19:50:12] en estación 3
+[19:50:12] espera de 20s en estación 3
+[19:50:33] viajando de 3 a 2 a vel 1
+[19:50:44] en estación 2
+[19:50:44] espera de 20s en estación 2
+[19:51:05] viajando de 2 a 1 a vel 1
+[19:51:15] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:51:25] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:51:25] [cambio de direccion]
+[19:51:26] en estación 1
+[19:51:26] espera de 20s en estación 1
+[19:51:47] viajando de 1 a 2 a vel 1
+[19:51:58] en estación 2
+[19:51:58] espera de 20s en estación 2
+[19:52:19] viajando de 2 a 3 a vel 1
+[19:52:30] en estación 3
+[19:52:30] espera de 20s en estación 3
+[19:52:52] viajando de 3 a 4 a vel 1
+[19:53:03] en estación 4
+[19:53:03] espera de 20s en estación 4
+[19:53:24] viajando de 4 a 5 a vel 1
+[19:53:34] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:53:44] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:53:44] [cambio de direccion]
+[19:53:45] en estación 5
+[19:53:45] espera de 20s en estación 5
+[19:54:06] viajando de 5 a 4 a vel 1
+[19:54:17] en estación 4
+[19:54:17] espera de 20s en estación 4
+[19:54:38] viajando de 4 a 3 a vel 1
+[19:54:49] en estación 3
+[19:54:49] espera de 20s en estación 3
+[19:55:10] viajando de 3 a 2 a vel 1
+[19:55:21] en estación 2
+[19:55:21] espera de 20s en estación 2
+[19:55:42] viajando de 2 a 1 a vel 1
+[19:55:52] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:56:02] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:56:02] [cambio de direccion]
+[19:56:03] en estación 1
+[19:56:03] espera de 20s en estación 1
+[19:56:24] viajando de 1 a 2 a vel 1
+[19:56:35] en estación 2
+[19:56:35] espera de 20s en estación 2
+[19:56:56] viajando de 2 a 3 a vel 1
+[19:57:07] en estación 3
+[19:57:07] espera de 20s en estación 3
+[19:57:28] viajando de 3 a 4 a vel 1
+[19:57:39] en estación 4
+[19:57:39] espera de 20s en estación 4
+[19:58:00] viajando de 4 a 5 a vel 1
+[19:58:10] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[19:58:20] [BATERIA RECARGADA] Metro reanuda recorrido.
+[19:58:20] [cambio de direccion]
+[19:58:21] en estación 5
+[19:58:21] espera de 20s en estación 5
+[19:58:42] viajando de 5 a 4 a vel 1
+[19:58:53] en estación 4
+[19:58:53] espera de 20s en estación 4
+[19:59:14] viajando de 4 a 3 a vel 1
+[19:59:25] en estación 3
+[19:59:25] espera de 20s en estación 3
+[19:59:46] viajando de 3 a 2 a vel 1
+[19:59:57] en estación 2
+[19:59:57] espera de 20s en estación 2
+[20:00:18] viajando de 2 a 1 a vel 1
+[20:00:28] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:00:38] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:00:38] [cambio de direccion]
+[20:00:39] en estación 1
+[20:00:39] espera de 20s en estación 1
+[20:01:00] viajando de 1 a 2 a vel 1
+[20:01:11] en estación 2
+[20:01:11] espera de 20s en estación 2
+[20:01:32] viajando de 2 a 3 a vel 1
+[20:01:43] en estación 3
+[20:01:43] espera de 20s en estación 3
+[20:02:04] viajando de 3 a 4 a vel 1
+[20:02:15] en estación 4
+[20:02:15] espera de 20s en estación 4
+[20:02:36] viajando de 4 a 5 a vel 1
+[20:02:46] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:02:56] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:02:56] [cambio de direccion]
+[20:02:57] en estación 5
+[20:02:57] espera de 20s en estación 5
+[20:03:18] viajando de 5 a 4 a vel 1
+[20:03:29] en estación 4
+[20:03:29] espera de 20s en estación 4
+[20:03:50] viajando de 4 a 3 a vel 1
+[20:04:01] en estación 3
+[20:04:01] espera de 20s en estación 3
+[20:04:22] viajando de 3 a 2 a vel 1
+[20:04:33] en estación 2
+[20:04:33] espera de 20s en estación 2
+[20:04:54] viajando de 2 a 1 a vel 1
+[20:05:04] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:05:14] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:05:14] [cambio de direccion]
+[20:05:15] en estación 1
+[20:05:15] espera de 20s en estación 1
+[20:05:36] viajando de 1 a 2 a vel 1
+[20:05:47] en estación 2
+[20:05:47] espera de 20s en estación 2
+[20:06:08] viajando de 2 a 3 a vel 1
+[20:06:19] en estación 3
+[20:06:19] espera de 20s en estación 3
+[20:06:40] viajando de 3 a 4 a vel 1
+[20:06:51] en estación 4
+[20:06:51] espera de 20s en estación 4
+[20:07:12] viajando de 4 a 5 a vel 1
+[20:07:22] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:07:32] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:07:32] [cambio de direccion]
+[20:07:33] en estación 5
+[20:07:33] espera de 20s en estación 5
+[20:07:54] viajando de 5 a 4 a vel 1
+[20:08:05] en estación 4
+[20:08:05] espera de 20s en estación 4
+[20:08:26] viajando de 4 a 3 a vel 1
+[20:08:37] en estación 3
+[20:08:37] espera de 20s en estación 3
+[20:08:58] viajando de 3 a 2 a vel 1
+[20:09:09] en estación 2
+[20:09:09] espera de 20s en estación 2
+[20:09:30] viajando de 2 a 1 a vel 1
+[20:09:40] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:09:50] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:09:50] [cambio de direccion]
+[20:09:51] en estación 1
+[20:09:51] espera de 20s en estación 1
+[20:10:12] viajando de 1 a 2 a vel 1
+[20:10:23] en estación 2
+[20:10:23] espera de 20s en estación 2
+[20:10:44] viajando de 2 a 3 a vel 1
+[20:10:55] en estación 3
+[20:10:55] espera de 20s en estación 3
+[20:11:16] viajando de 3 a 4 a vel 1
+[20:11:27] en estación 4
+[20:11:27] espera de 20s en estación 4
+[20:11:48] viajando de 4 a 5 a vel 1
+[20:11:58] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:12:08] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:12:08] [cambio de direccion]
+[20:12:09] en estación 5
+[20:12:09] espera de 20s en estación 5
+[20:12:30] viajando de 5 a 4 a vel 1
+[20:12:41] en estación 4
+[20:12:41] espera de 20s en estación 4
+[20:13:02] viajando de 4 a 3 a vel 1
+[20:13:13] en estación 3
+[20:13:13] espera de 20s en estación 3
+[20:13:34] viajando de 3 a 2 a vel 1
+[20:13:45] en estación 2
+[20:13:45] espera de 20s en estación 2
+[20:14:06] viajando de 2 a 1 a vel 1
+[20:14:16] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:14:26] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:14:26] [cambio de direccion]
+[20:14:27] en estación 1
+[20:14:27] espera de 20s en estación 1
+[20:14:48] viajando de 1 a 2 a vel 1
+[20:14:59] en estación 2
+[20:14:59] espera de 20s en estación 2
+[20:15:20] viajando de 2 a 3 a vel 1
+[20:15:31] en estación 3
+[20:15:31] espera de 20s en estación 3
+[20:15:52] viajando de 3 a 4 a vel 1
+[20:16:03] en estación 4
+[20:16:03] espera de 20s en estación 4
+[20:16:24] viajando de 4 a 5 a vel 1
+[20:16:34] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:16:44] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:16:44] [cambio de direccion]
+[20:16:45] en estación 5
+[20:16:45] espera de 20s en estación 5
+[20:17:06] viajando de 5 a 4 a vel 1
+[20:17:17] en estación 4
+[20:17:17] espera de 20s en estación 4
+[20:17:38] viajando de 4 a 3 a vel 1
+[20:17:49] en estación 3
+[20:17:49] espera de 20s en estación 3
+[20:18:10] viajando de 3 a 2 a vel 1
+[20:18:21] en estación 2
+[20:18:21] espera de 20s en estación 2
+[20:18:42] viajando de 2 a 1 a vel 1
+[20:18:52] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:19:02] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:19:02] [cambio de direccion]
+[20:19:03] en estación 1
+[20:19:03] espera de 20s en estación 1
+[20:19:24] viajando de 1 a 2 a vel 1
+[20:19:35] en estación 2
+[20:19:35] espera de 20s en estación 2
+[20:19:56] viajando de 2 a 3 a vel 1
+[20:20:07] en estación 3
+[20:20:07] espera de 20s en estación 3
+[20:20:28] viajando de 3 a 4 a vel 1
+[20:20:39] en estación 4
+[20:20:39] espera de 20s en estación 4
+[20:21:00] viajando de 4 a 5 a vel 1
+[20:21:10] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:21:20] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:21:20] [cambio de direccion]
+[20:21:21] en estación 5
+[20:21:21] espera de 20s en estación 5
+[20:21:42] viajando de 5 a 4 a vel 1
+[20:21:53] en estación 4
+[20:21:53] espera de 20s en estación 4
+[20:22:14] viajando de 4 a 3 a vel 1
+[20:22:25] en estación 3
+[20:22:25] espera de 20s en estación 3
+[20:22:46] viajando de 3 a 2 a vel 1
+[20:22:57] en estación 2
+[20:22:57] espera de 20s en estación 2
+[20:23:18] viajando de 2 a 1 a vel 1
+[20:23:28] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:23:38] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:23:38] [cambio de direccion]
+[20:23:39] en estación 1
+[20:23:39] espera de 20s en estación 1
+[20:24:00] viajando de 1 a 2 a vel 1
+[20:24:11] en estación 2
+[20:24:11] espera de 20s en estación 2
+[20:24:32] viajando de 2 a 3 a vel 1
+[20:24:43] en estación 3
+[20:24:43] espera de 20s en estación 3
+[20:25:04] viajando de 3 a 4 a vel 1
+[20:25:15] en estación 4
+[20:25:15] espera de 20s en estación 4
+[20:25:36] viajando de 4 a 5 a vel 1
+[20:25:46] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:25:56] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:25:56] [cambio de direccion]
+[20:25:57] en estación 5
+[20:25:57] espera de 20s en estación 5
+[20:26:18] viajando de 5 a 4 a vel 1
+[20:26:29] en estación 4
+[20:26:29] espera de 20s en estación 4
+[20:26:50] viajando de 4 a 3 a vel 1
+[20:27:01] en estación 3
+[20:27:01] espera de 20s en estación 3
+[20:27:22] viajando de 3 a 2 a vel 1
+[20:27:33] en estación 2
+[20:27:33] espera de 20s en estación 2
+[20:27:54] viajando de 2 a 1 a vel 1
+[20:28:04] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:28:14] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:28:14] [cambio de direccion]
+[20:28:15] en estación 1
+[20:28:15] espera de 20s en estación 1
+[20:28:36] viajando de 1 a 2 a vel 1
+[20:28:47] en estación 2
+[20:28:47] espera de 20s en estación 2
+[20:29:08] viajando de 2 a 3 a vel 1
+[20:29:19] en estación 3
+[20:29:19] espera de 20s en estación 3
+[20:29:40] viajando de 3 a 4 a vel 1
+[20:29:51] en estación 4
+[20:29:51] espera de 20s en estación 4
+[20:30:12] viajando de 4 a 5 a vel 1
+[20:30:22] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:30:32] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:30:32] [cambio de direccion]
+[20:30:33] en estación 5
+[20:30:33] espera de 20s en estación 5
+[20:30:54] viajando de 5 a 4 a vel 1
+[20:31:05] en estación 4
+[20:31:05] espera de 20s en estación 4
+[20:31:26] viajando de 4 a 3 a vel 1
+[20:31:37] en estación 3
+[20:31:37] espera de 20s en estación 3
+[20:31:58] viajando de 3 a 2 a vel 1
+[20:32:09] en estación 2
+[20:32:09] espera de 20s en estación 2
+[20:32:30] viajando de 2 a 1 a vel 1
+[20:32:40] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:32:50] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:32:50] [cambio de direccion]
+[20:32:51] en estación 1
+[20:32:51] espera de 20s en estación 1
+[20:33:12] viajando de 1 a 2 a vel 1
+[20:33:23] en estación 2
+[20:33:23] espera de 20s en estación 2
+[20:33:44] viajando de 2 a 3 a vel 1
+[20:33:55] en estación 3
+[20:33:55] espera de 20s en estación 3
+[20:34:16] viajando de 3 a 4 a vel 1
+[20:34:27] en estación 4
+[20:34:27] espera de 20s en estación 4
+[20:34:48] viajando de 4 a 5 a vel 1
+[20:34:58] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:35:08] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:35:08] [cambio de direccion]
+[20:35:09] en estación 5
+[20:35:09] espera de 20s en estación 5
+[20:35:30] viajando de 5 a 4 a vel 1
+[20:35:41] en estación 4
+[20:35:41] espera de 20s en estación 4
+[20:36:02] viajando de 4 a 3 a vel 1
+[20:36:13] en estación 3
+[20:36:13] espera de 20s en estación 3
+[20:36:34] viajando de 3 a 2 a vel 1
+[20:36:45] en estación 2
+[20:36:45] espera de 20s en estación 2
+[20:37:06] viajando de 2 a 1 a vel 1
+[20:37:16] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:37:26] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:37:26] [cambio de direccion]
+[20:37:27] en estación 1
+[20:37:27] espera de 20s en estación 1
+[20:37:48] viajando de 1 a 2 a vel 1
+[20:37:59] en estación 2
+[20:37:59] espera de 20s en estación 2
+[20:38:20] viajando de 2 a 3 a vel 1
+[20:38:31] en estación 3
+[20:38:31] espera de 20s en estación 3
+[20:38:52] viajando de 3 a 4 a vel 1
+[20:39:03] en estación 4
+[20:39:03] espera de 20s en estación 4
+[20:39:24] viajando de 4 a 5 a vel 1
+[20:39:34] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:39:44] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:39:44] [cambio de direccion]
+[20:39:45] en estación 5
+[20:39:45] espera de 20s en estación 5
+[20:40:06] viajando de 5 a 4 a vel 1
+[20:40:17] en estación 4
+[20:40:17] espera de 20s en estación 4
+[20:40:38] viajando de 4 a 3 a vel 1
+[20:40:49] en estación 3
+[20:40:49] espera de 20s en estación 3
+[20:41:10] viajando de 3 a 2 a vel 1
+[20:41:21] en estación 2
+[20:41:21] espera de 20s en estación 2
+[20:41:42] viajando de 2 a 1 a vel 1
+[20:41:52] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:42:02] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:42:02] [cambio de direccion]
+[20:42:03] en estación 1
+[20:42:03] espera de 20s en estación 1
+[20:42:24] viajando de 1 a 2 a vel 1
+[20:42:35] en estación 2
+[20:42:35] espera de 20s en estación 2
+[20:42:56] viajando de 2 a 3 a vel 1
+[20:43:07] en estación 3
+[20:43:07] espera de 20s en estación 3
+[20:43:28] viajando de 3 a 4 a vel 1
+[20:43:39] en estación 4
+[20:43:39] espera de 20s en estación 4
+[20:44:00] viajando de 4 a 5 a vel 1
+[20:44:10] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:44:20] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:44:20] [cambio de direccion]
+[20:44:21] en estación 5
+[20:44:21] espera de 20s en estación 5
+[20:44:42] viajando de 5 a 4 a vel 1
+[20:44:53] en estación 4
+[20:44:53] espera de 20s en estación 4
+[20:45:14] viajando de 4 a 3 a vel 1
+[20:45:25] en estación 3
+[20:45:25] espera de 20s en estación 3
+[20:45:46] viajando de 3 a 2 a vel 1
+[20:45:57] en estación 2
+[20:45:57] espera de 20s en estación 2
+[20:46:18] viajando de 2 a 1 a vel 1
+[20:46:28] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:46:38] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:46:38] [cambio de direccion]
+[20:46:39] en estación 1
+[20:46:39] espera de 20s en estación 1
+[20:47:00] viajando de 1 a 2 a vel 1
+[20:47:11] en estación 2
+[20:47:11] espera de 20s en estación 2
+[20:47:32] viajando de 2 a 3 a vel 1
+[20:47:43] en estación 3
+[20:47:43] espera de 20s en estación 3
+[20:48:04] viajando de 3 a 4 a vel 1
+[20:48:15] en estación 4
+[20:48:15] espera de 20s en estación 4
+[20:48:36] viajando de 4 a 5 a vel 1
+[20:48:46] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:48:56] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:48:56] [cambio de direccion]
+[20:48:57] en estación 5
+[20:48:57] espera de 20s en estación 5
+[20:49:18] viajando de 5 a 4 a vel 1
+[20:49:29] en estación 4
+[20:49:29] espera de 20s en estación 4
+[20:49:50] viajando de 4 a 3 a vel 1
+[20:50:01] en estación 3
+[20:50:01] espera de 20s en estación 3
+[20:50:22] viajando de 3 a 2 a vel 1
+[20:50:33] en estación 2
+[20:50:33] espera de 20s en estación 2
+[20:50:54] viajando de 2 a 1 a vel 1
+[20:51:04] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:51:14] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:51:14] [cambio de direccion]
+[20:51:15] en estación 1
+[20:51:15] espera de 20s en estación 1
+[20:51:36] viajando de 1 a 2 a vel 1
+[20:51:47] en estación 2
+[20:51:47] espera de 20s en estación 2
+[20:52:08] viajando de 2 a 3 a vel 1
+[20:52:19] en estación 3
+[20:52:19] espera de 20s en estación 3
+[20:52:40] viajando de 3 a 4 a vel 1
+[20:52:51] en estación 4
+[20:52:51] espera de 20s en estación 4
+[20:53:12] viajando de 4 a 5 a vel 1
+[20:53:22] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[20:53:32] [BATERIA RECARGADA] Metro reanuda recorrido.
+[20:53:32] [cambio de direccion]
+[21:59:57] Servidor iniciado.
+[21:59:58] en estación 1
+[21:59:58] espera de 20s en estación 1
+[22:00:04] Cliente intentando conectarse desde 127.0.0.1:58528
+[22:00:19] viajando de 1 a 2 a vel 1
+[22:00:30] en estación 2
+[22:00:30] espera de 20s en estación 2
+[22:00:51] viajando de 2 a 3 a vel 1
+[22:01:02] en estación 3
+[22:01:02] espera de 20s en estación 3
+[22:01:23] viajando de 3 a 4 a vel 1
+[22:01:34] en estación 4
+[22:01:34] espera de 20s en estación 4
+[22:01:55] viajando de 4 a 5 a vel 1
+[22:02:05] [cambio de direccion]
+[22:02:06] en estación 5
+[22:02:06] espera de 20s en estación 5
+[22:02:27] viajando de 5 a 4 a vel 1
+[22:02:38] en estación 4
+[22:02:38] espera de 20s en estación 4
+[22:02:59] viajando de 4 a 3 a vel 1
+[22:03:10] en estación 3
+[22:03:10] espera de 20s en estación 3
+[22:03:31] viajando de 3 a 2 a vel 1
+[22:03:42] en estación 2
+[22:03:42] espera de 20s en estación 2
+[22:04:03] viajando de 2 a 1 a vel 1
+[22:04:13] [cambio de direccion]
+[22:04:14] en estación 1
+[22:04:14] espera de 20s en estación 1
+[22:04:35] viajando de 1 a 2 a vel 1
+[22:04:46] en estación 2
+[22:04:46] espera de 20s en estación 2
+[22:05:07] viajando de 2 a 3 a vel 1
+[22:05:18] en estación 3
+[22:05:18] espera de 20s en estación 3
+[22:05:39] viajando de 3 a 4 a vel 1
+[22:05:50] en estación 4
+[22:05:50] espera de 20s en estación 4
+[22:06:11] viajando de 4 a 5 a vel 1
+[22:06:21] [cambio de direccion]
+[22:06:22] en estación 5
+[22:06:22] espera de 20s en estación 5
+[22:06:43] viajando de 5 a 4 a vel 1
+[22:06:54] en estación 4
+[22:06:54] espera de 20s en estación 4
+[22:07:15] viajando de 4 a 3 a vel 1
+[22:07:26] en estación 3
+[22:07:26] espera de 20s en estación 3
+[22:07:47] viajando de 3 a 2 a vel 1
+[22:07:58] en estación 2
+[22:07:58] espera de 20s en estación 2
+[22:08:19] viajando de 2 a 1 a vel 1
+[22:08:29] [cambio de direccion]
+[22:08:30] en estación 1
+[22:08:30] espera de 20s en estación 1
+[22:08:51] viajando de 1 a 2 a vel 1
+[22:09:02] en estación 2
+[22:09:02] espera de 20s en estación 2
+[22:09:23] viajando de 2 a 3 a vel 1
+[22:09:34] en estación 3
+[22:09:34] espera de 20s en estación 3
+[22:09:55] viajando de 3 a 4 a vel 1
+[22:10:06] en estación 4
+[22:10:06] espera de 20s en estación 4
+[22:10:27] viajando de 4 a 5 a vel 1
+[22:10:37] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:10:47] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:10:47] [cambio de direccion]
+[22:10:48] en estación 5
+[22:10:48] espera de 20s en estación 5
+[22:11:09] viajando de 5 a 4 a vel 1
+[22:11:20] en estación 4
+[22:11:20] espera de 20s en estación 4
+[22:11:41] viajando de 4 a 3 a vel 1
+[22:11:52] en estación 3
+[22:11:52] espera de 20s en estación 3
+[22:12:13] viajando de 3 a 2 a vel 1
+[22:12:24] en estación 2
+[22:12:24] espera de 20s en estación 2
+[22:12:45] viajando de 2 a 1 a vel 1
+[22:12:55] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:13:05] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:13:05] [cambio de direccion]
+[22:13:06] en estación 1
+[22:13:06] espera de 20s en estación 1
+[22:13:27] viajando de 1 a 2 a vel 1
+[22:13:38] en estación 2
+[22:13:38] espera de 20s en estación 2
+[22:13:59] viajando de 2 a 3 a vel 1
+[22:14:10] en estación 3
+[22:14:10] espera de 20s en estación 3
+[22:14:31] viajando de 3 a 4 a vel 1
+[22:14:42] en estación 4
+[22:14:42] espera de 20s en estación 4
+[22:15:03] viajando de 4 a 5 a vel 1
+[22:15:13] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:15:23] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:15:23] [cambio de direccion]
+[22:15:24] en estación 5
+[22:15:24] espera de 20s en estación 5
+[22:15:45] viajando de 5 a 4 a vel 1
+[22:15:56] en estación 4
+[22:15:56] espera de 20s en estación 4
+[22:16:17] viajando de 4 a 3 a vel 1
+[22:16:28] en estación 3
+[22:16:28] espera de 20s en estación 3
+[22:16:49] viajando de 3 a 2 a vel 1
+[22:17:00] en estación 2
+[22:17:00] espera de 20s en estación 2
+[22:17:21] viajando de 2 a 1 a vel 1
+[22:17:31] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:17:41] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:17:41] [cambio de direccion]
+[22:17:42] en estación 1
+[22:17:42] espera de 20s en estación 1
+[22:18:03] viajando de 1 a 2 a vel 1
+[22:18:14] en estación 2
+[22:18:14] espera de 20s en estación 2
+[22:18:35] viajando de 2 a 3 a vel 1
+[22:18:46] en estación 3
+[22:18:46] espera de 20s en estación 3
+[22:19:07] viajando de 3 a 4 a vel 1
+[22:19:18] en estación 4
+[22:19:18] espera de 20s en estación 4
+[22:19:39] viajando de 4 a 5 a vel 1
+[22:19:49] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:19:59] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:19:59] [cambio de direccion]
+[22:20:00] en estación 5
+[22:20:00] espera de 20s en estación 5
+[22:20:21] viajando de 5 a 4 a vel 1
+[22:20:32] en estación 4
+[22:20:32] espera de 20s en estación 4
+[22:20:53] viajando de 4 a 3 a vel 1
+[22:21:04] en estación 3
+[22:21:04] espera de 20s en estación 3
+[22:21:25] viajando de 3 a 2 a vel 1
+[22:21:36] en estación 2
+[22:21:36] espera de 20s en estación 2
+[22:21:57] viajando de 2 a 1 a vel 1
+[22:22:07] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:22:17] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:22:17] [cambio de direccion]
+[22:22:18] en estación 1
+[22:22:18] espera de 20s en estación 1
+[22:22:39] viajando de 1 a 2 a vel 1
+[22:22:50] en estación 2
+[22:22:50] espera de 20s en estación 2
+[22:23:11] viajando de 2 a 3 a vel 1
+[22:23:22] en estación 3
+[22:23:22] espera de 20s en estación 3
+[22:23:43] viajando de 3 a 4 a vel 1
+[22:23:54] en estación 4
+[22:23:54] espera de 20s en estación 4
+[22:24:15] viajando de 4 a 5 a vel 1
+[22:24:25] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:24:35] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:24:35] [cambio de direccion]
+[22:24:36] en estación 5
+[22:24:36] espera de 20s en estación 5
+[22:24:57] viajando de 5 a 4 a vel 1
+[22:25:08] en estación 4
+[22:25:08] espera de 20s en estación 4
+[22:25:29] viajando de 4 a 3 a vel 1
+[22:25:40] en estación 3
+[22:25:40] espera de 20s en estación 3
+[22:26:01] viajando de 3 a 2 a vel 1
+[22:26:12] en estación 2
+[22:26:12] espera de 20s en estación 2
+[22:26:33] viajando de 2 a 1 a vel 1
+[22:26:43] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:26:53] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:26:53] [cambio de direccion]
+[22:26:54] en estación 1
+[22:26:54] espera de 20s en estación 1
+[22:27:15] viajando de 1 a 2 a vel 1
+[22:27:26] en estación 2
+[22:27:26] espera de 20s en estación 2
+[22:27:47] viajando de 2 a 3 a vel 1
+[22:27:58] en estación 3
+[22:27:58] espera de 20s en estación 3
+[22:28:19] viajando de 3 a 4 a vel 1
+[22:28:30] en estación 4
+[22:28:30] espera de 20s en estación 4
+[22:28:51] viajando de 4 a 5 a vel 1
+[22:29:01] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:29:11] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:29:11] [cambio de direccion]
+[22:29:12] en estación 5
+[22:29:12] espera de 20s en estación 5
+[22:29:33] viajando de 5 a 4 a vel 1
+[22:29:44] en estación 4
+[22:29:44] espera de 20s en estación 4
+[22:30:05] viajando de 4 a 3 a vel 1
+[22:30:16] en estación 3
+[22:30:16] espera de 20s en estación 3
+[22:30:37] viajando de 3 a 2 a vel 1
+[22:30:48] en estación 2
+[22:30:48] espera de 20s en estación 2
+[22:31:09] viajando de 2 a 1 a vel 1
+[22:31:19] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:31:29] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:31:29] [cambio de direccion]
+[22:31:30] en estación 1
+[22:31:30] espera de 20s en estación 1
+[22:31:51] viajando de 1 a 2 a vel 1
+[22:32:02] en estación 2
+[22:32:02] espera de 20s en estación 2
+[22:32:23] viajando de 2 a 3 a vel 1
+[22:32:34] en estación 3
+[22:32:34] espera de 20s en estación 3
+[22:32:55] viajando de 3 a 4 a vel 1
+[22:33:06] en estación 4
+[22:33:06] espera de 20s en estación 4
+[22:33:27] viajando de 4 a 5 a vel 1
+[22:33:37] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:33:47] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:33:47] [cambio de direccion]
+[22:33:48] en estación 5
+[22:33:48] espera de 20s en estación 5
+[22:34:09] viajando de 5 a 4 a vel 1
+[22:34:20] en estación 4
+[22:34:20] espera de 20s en estación 4
+[22:34:41] viajando de 4 a 3 a vel 1
+[22:34:52] en estación 3
+[22:34:52] espera de 20s en estación 3
+[22:35:13] viajando de 3 a 2 a vel 1
+[22:35:24] en estación 2
+[22:35:24] espera de 20s en estación 2
+[22:35:45] viajando de 2 a 1 a vel 1
+[22:35:55] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:36:05] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:36:05] [cambio de direccion]
+[22:36:06] en estación 1
+[22:36:06] espera de 20s en estación 1
+[22:36:27] viajando de 1 a 2 a vel 1
+[22:36:38] en estación 2
+[22:36:38] espera de 20s en estación 2
+[22:36:59] viajando de 2 a 3 a vel 1
+[22:37:10] en estación 3
+[22:37:10] espera de 20s en estación 3
+[22:37:31] viajando de 3 a 4 a vel 1
+[22:37:42] en estación 4
+[22:37:42] espera de 20s en estación 4
+[22:38:03] viajando de 4 a 5 a vel 1
+[22:38:13] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:38:23] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:38:23] [cambio de direccion]
+[22:38:24] en estación 5
+[22:38:24] espera de 20s en estación 5
+[22:38:45] viajando de 5 a 4 a vel 1
+[22:38:56] en estación 4
+[22:38:56] espera de 20s en estación 4
+[22:39:17] viajando de 4 a 3 a vel 1
+[22:39:28] en estación 3
+[22:39:28] espera de 20s en estación 3
+[22:39:49] viajando de 3 a 2 a vel 1
+[22:40:00] en estación 2
+[22:40:00] espera de 20s en estación 2
+[22:40:21] viajando de 2 a 1 a vel 1
+[22:40:31] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:40:41] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:40:41] [cambio de direccion]
+[22:40:42] en estación 1
+[22:40:42] espera de 20s en estación 1
+[22:41:03] viajando de 1 a 2 a vel 1
+[22:41:14] en estación 2
+[22:41:14] espera de 20s en estación 2
+[22:41:35] viajando de 2 a 3 a vel 1
+[22:41:46] en estación 3
+[22:41:46] espera de 20s en estación 3
+[22:42:07] viajando de 3 a 4 a vel 1
+[22:42:18] en estación 4
+[22:42:18] espera de 20s en estación 4
+[22:42:39] viajando de 4 a 5 a vel 1
+[22:42:49] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:42:59] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:42:59] [cambio de direccion]
+[22:43:00] en estación 5
+[22:43:00] espera de 20s en estación 5
+[22:43:22] viajando de 5 a 4 a vel 1
+[22:43:33] en estación 4
+[22:43:33] espera de 20s en estación 4
+[22:43:54] viajando de 4 a 3 a vel 1
+[22:44:05] en estación 3
+[22:44:05] espera de 20s en estación 3
+[22:44:26] viajando de 3 a 2 a vel 1
+[22:44:37] en estación 2
+[22:44:37] espera de 20s en estación 2
+[22:44:58] viajando de 2 a 1 a vel 1
+[22:45:08] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:45:18] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:45:18] [cambio de direccion]
+[22:45:19] en estación 1
+[22:45:19] espera de 20s en estación 1
+[22:45:40] viajando de 1 a 2 a vel 1
+[22:45:51] en estación 2
+[22:45:51] espera de 20s en estación 2
+[22:46:12] viajando de 2 a 3 a vel 1
+[22:46:23] en estación 3
+[22:46:23] espera de 20s en estación 3
+[22:46:44] viajando de 3 a 4 a vel 1
+[22:46:55] en estación 4
+[22:46:55] espera de 20s en estación 4
+[22:47:16] viajando de 4 a 5 a vel 1
+[22:47:26] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:47:36] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:47:36] [cambio de direccion]
+[22:47:37] en estación 5
+[22:47:37] espera de 20s en estación 5
+[22:47:58] viajando de 5 a 4 a vel 1
+[22:48:09] en estación 4
+[22:48:09] espera de 20s en estación 4
+[22:48:30] viajando de 4 a 3 a vel 1
+[22:48:41] en estación 3
+[22:48:41] espera de 20s en estación 3
+[22:49:02] viajando de 3 a 2 a vel 1
+[22:49:13] en estación 2
+[22:49:13] espera de 20s en estación 2
+[22:49:34] viajando de 2 a 1 a vel 1
+[22:49:44] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:49:54] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:49:54] [cambio de direccion]
+[22:49:55] en estación 1
+[22:49:55] espera de 20s en estación 1
+[22:50:16] viajando de 1 a 2 a vel 1
+[22:50:27] en estación 2
+[22:50:27] espera de 20s en estación 2
+[22:50:48] viajando de 2 a 3 a vel 1
+[22:50:59] en estación 3
+[22:50:59] espera de 20s en estación 3
+[22:51:20] viajando de 3 a 4 a vel 1
+[22:51:31] en estación 4
+[22:51:31] espera de 20s en estación 4
+[22:51:52] viajando de 4 a 5 a vel 1
+[22:52:02] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:52:12] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:52:12] [cambio de direccion]
+[22:52:13] en estación 5
+[22:52:13] espera de 20s en estación 5
+[22:52:34] viajando de 5 a 4 a vel 1
+[22:52:45] en estación 4
+[22:52:45] espera de 20s en estación 4
+[22:53:06] viajando de 4 a 3 a vel 1
+[22:53:17] en estación 3
+[22:53:17] espera de 20s en estación 3
+[22:53:38] viajando de 3 a 2 a vel 1
+[22:53:49] en estación 2
+[22:53:49] espera de 20s en estación 2
+[22:54:10] viajando de 2 a 1 a vel 1
+[22:54:20] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:54:30] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:54:30] [cambio de direccion]
+[22:54:31] en estación 1
+[22:54:31] espera de 20s en estación 1
+[22:54:52] viajando de 1 a 2 a vel 1
+[22:55:03] en estación 2
+[22:55:03] espera de 20s en estación 2
+[22:55:24] viajando de 2 a 3 a vel 1
+[22:55:35] en estación 3
+[22:55:35] espera de 20s en estación 3
+[22:55:56] viajando de 3 a 4 a vel 1
+[22:56:07] en estación 4
+[22:56:07] espera de 20s en estación 4
+[22:56:28] viajando de 4 a 5 a vel 1
+[22:56:38] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:56:48] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:56:48] [cambio de direccion]
+[22:56:49] en estación 5
+[22:56:49] espera de 20s en estación 5
+[22:57:10] viajando de 5 a 4 a vel 1
+[22:57:21] en estación 4
+[22:57:21] espera de 20s en estación 4
+[22:57:42] viajando de 4 a 3 a vel 1
+[22:57:53] en estación 3
+[22:57:53] espera de 20s en estación 3
+[22:58:14] viajando de 3 a 2 a vel 1
+[22:58:25] en estación 2
+[22:58:25] espera de 20s en estación 2
+[22:58:46] viajando de 2 a 1 a vel 1
+[22:58:56] [BATERIA AGOTADA] Metro detenido 10s para recargar.
+[22:59:06] [BATERIA RECARGADA] Metro reanuda recorrido.
+[22:59:06] [cambio de direccion]
+[22:59:07] en estación 1
+[22:59:07] espera de 20s en estación 1
+[22:59:28] viajando de 1 a 2 a vel 1
+[22:59:39] en estación 2
+[22:59:39] espera de 20s en estación 2
+[23:00:00] viajando de 2 a 3 a vel 1
